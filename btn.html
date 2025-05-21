@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <!-- ✅ 設定網頁使用 UTF-8 編碼（支援中文） -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- ✅ 設定響應式網頁，在不同裝置上自動縮放 -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- ✅ 引入 Bootstrap 5.3.3 的 CSS 樣式表，提供表單、排版、美化、按鈕等樣式 -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- ✅ 引入 Bootstrap 的 JavaScript 套件，包括互動功能如按鈕切換、modal、下拉選單等 -->
+
+  <title>Bootstrap網頁</title>
+</head>
+
+<body>
+
+  <!-- ✅ 第一組按鈕示範（實心樣式） -->
+  <div class="container">
+    <!-- a 元素搭配 btn 類別可以當作按鈕使用（常用於連結） -->
+    <a class="btn btn-primary" href="#" role="button">按鈕1</a>
+    <!-- ✅ .btn 是 Bootstrap 所有按鈕的基礎樣式 -->
+    <!-- ✅ .btn-primary 表示主色按鈕（藍色） -->
+
+    <button class="btn btn-secondary" type="submit">按鈕2</button>
+    <!-- ✅ .btn-secondary 是次要按鈕（灰色） -->
+
+    <input class="btn btn-success" type="submit" value="按鈕3">
+    <!-- ✅ .btn-success：綠色成功樣式，通常用於送出表單 -->
+
+    <input class="btn btn-danger" type="reset" value="按鈕4">
+    <!-- ✅ .btn-danger：紅色危險樣式，常用於刪除、重設動作 -->
+
+    <input class="btn btn-warning" type="button" value="按鈕5">
+    <!-- ✅ .btn-warning：橘色警告樣式 -->
+
+    <input class="btn btn-info" type="button" value="按鈕6">
+    <!-- ✅ .btn-info：淺藍色資訊提示樣式 -->
+
+    <input class="btn btn-light" type="button" value="按鈕7">
+    <!-- ✅ .btn-light：白色／灰白背景（需注意背景對比） -->
+
+    <input class="btn btn-dark" type="button" value="按鈕8">
+    <!-- ✅ .btn-dark：深灰色樣式 -->
+
+    <input class="btn btn-link" type="button" value="按鈕9">
+    <!-- ✅ .btn-link：按鈕呈現超連結外觀（無底色，藍色文字） -->
+  </div>
+
+  <hr>
+
+  <!-- ✅ 第二組按鈕示範（邊框樣式 / 尺寸 / 狀態） -->
+  <div class="container">
+
+    <!-- ✅ outline 類別是「邊框按鈕」，背景為透明、邊框有顏色 -->
+    <input class="btn btn-outline-primary" type="button" value="按鈕1">
+    <input class="btn btn-outline-secondary" type="button" value="按鈕2">
+    <input class="btn btn-outline-success" type="button" value="按鈕3">
+    <input class="btn btn-outline-danger" type="button" value="按鈕4">
+    <input class="btn btn-outline-warning" type="button" value="按鈕5">
+    <input class="btn btn-outline-info" type="button" value="按鈕6">
+    <input class="btn btn-outline-light" type="button" value="按鈕7">
+    <input class="btn btn-outline-dark" type="button" value="按鈕8">
+
+    <!-- ✅ 不同尺寸 -->
+    <input class="btn btn-primary" type="button" value="預設按鈕">
+    <input class="btn btn-primary btn-sm" type="button" value="小按鈕">
+    <!-- ✅ .btn-sm：縮小版按鈕 -->
+
+    <input class="btn btn-primary btn-lg" type="button" value="大按鈕">
+    <!-- ✅ .btn-lg：放大版按鈕 -->
+
+    <!-- ✅ 狀態類別 -->
+    <input class="btn btn-primary active" type="button" value="啟用按鈕">
+    <!-- ✅ .active：按鈕處於「啟用中 / 高亮」狀態 -->
+
+    <input class="btn btn-primary disabled" type="button" value="停用按鈕">
+    <!-- ✅ .disabled：按鈕處於「停用」狀態（無法點擊） -->
+  </div>
+
+</body>
+
+</html>
