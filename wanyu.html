@@ -1,47 +1,209 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
 
 <head>
-    <title>Bootstrap Example</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>我的個人網站</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      background: linear-gradient(to right, #e0c3fc, #8ec5fc);
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 20px;
+    }
+
+    header h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 20px;
+      color: #555;
+    }
+
+    .profile-img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid white;
+      margin-top: 20px;
+    }
+
+    .content {
+      max-width: 800px;
+      margin: 30px auto;
+      background: white;
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .content h2 {
+      color: #5e3ec9;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #777;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #5e3ec9;
+      font-weight: bold;
+    }
+
+    .activity-photos {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .activity-photos img {
+      width: 200px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+  </style>
 </head>
 
 <body>
 
-    <div class="container mt-3">
-        <p>The font-size of each Bootstrap heading depends on the screen size. Try to resize the browser window to see
-            the effect.</p>
-        <div class="h">h1 Bootstrap heading</div>
-        <div class="h2">h2 Bootstrap heading</div>
-        <div class="h3">h3 Bootstrap heading</div>
-        <div class="h4">h4 Bootstrap heading</div>
-        <div class="h5">h5 Bootstrap heading</div>
-        <div class="h6">h6 Bootstrap heading</div>
+  <header>
+    <img src="images/me.png" alt="大頭照" width="150" height="210">
+    <p>✨ 個人網站 ✨</p>
+  </header>
+
+  <div class="content">
+    <h2>自我介紹</h2>
+    <p>姓名:杜婉瑜<br>
+      學校:國立聯合大學<br>
+      主修專業:資訊管理學系<br>
+      興趣:跳舞、打電動<br>
+      目標:研究所
+    </p>
+
+    <h2>教育背景</h2>
+    <p>學歷:大學<br>
+      學術成就:正在積極修習與資訊系統、程式設計相關之核心課程，目前已完成《程式設計一、二》、《資料結構》、《統計學一》等課程。<br>
+      就讀大學:國立聯合大學資訊管理學系<br>
+      所獲學位:正在攻讀國立聯合大學 資訊管理學系（大二在學中，預計 2027 年畢業）<br>
+      重要課程:程式設計、資料結構、資料庫程式設計<br>
+      專案:點餐系統(大一上)、線上圖書館借還書系統(大一下)、台灣出生率與死亡率的比較(大二上)、交易平台(大二下)
+    </p>
+
+    <h2>經驗和實習</h2>
+    <p>工作經驗:火鍋店店員、英文家教、賣家、偏鄉課輔代班老師<br>
+    <h3>火鍋店店員</h3>
+    <p>
+      只打工一個月。在火鍋店工作的日子裡，再也不敢去火鍋店吃飯。在火鍋店打工的期間，我學會了與客人溝通、提升服務態度，也體會到團隊合作的重要性。在忙碌的環境中培養了抗壓性與時間管理能力，同時熟悉了餐飲流程與衛生觀念。這段經歷讓我更懂得珍惜收入，也累積了寶貴的職場經驗。
+    </p>
+    <h3>英文家教</h3>
+    <p>
+      大二下開始接家教，目前在幫一個幼稚園中班的妹妹跟一個小二的弟弟上英文。當英文家教的過程中，我學會如何根據學生的程度調整教學方式，培養了耐心與表達能力。同時也提升了自己的英文實力與溝通技巧，並從中體會到教學的成就感與責任感。這段經歷讓我更懂得站在他人立場思考，並建立了良好的時間與課程規劃能力。
+    </p>
+    <h3>賣家</h3>
+    <p>
+      從去年起開始在網路上販售明星周邊，像是小卡、明信片等。當賣家的過程中，我學會了如何與客人溝通、處理訂單與售後問題，提升了應對能力與服務態度。同時也培養了商品整理、庫存管理與行銷宣傳的技巧。這段經歷讓我更懂得時間安排與負責任的重要，並累積了實際經營與獨立處理事情的能力。
+    </p>
+    <h3>偏鄉課輔系統代班老師</h3>
+    <p>今年開始擔任系統代班，我需要處理班上的各項事務，例如管理大學伴、撰寫代班日誌等。這段經歷讓我學會如何有效管理一個班級，也培養了在突發狀況中冷靜應對與解決問題的能力，提升了責任感與組織協調能力。</p>
+    </p>
+
+    <h2>專業技能</h2>
+    <h3>在資管領域具備的技能和專業知識</h3>
+    <ul>
+      <li>程式語言：
+        <ul>
+          <li>Python：★★★★☆</li>
+          <li>C/C++：★★★☆☆</li>
+          <li>HTML/CSS：★★★★☆</li>
+          <li>PHP：★★★☆☆</li>
+        </ul>
+      </li>
+      <li>資料庫管理：
+        <ul>
+          <li>MySQL：★★★☆☆</li>
+          <li>資料庫正規化與資料設計：★★★☆☆</li>
+        </ul>
+      </li>
+      <li>網頁開發：
+        <ul>
+          <li>前端（HTML/CSS）：★★★★☆</li>
+          <li>後端（PHP）：★★★☆☆</li>
+        </ul>
+      </li>
+      <li>專案管理：
+        <ul>
+          <li>團隊協作與溝通：★★★★☆</li>
+          <li>時間規劃與進度管理：★★★★☆</li>
+        </ul>
+      </li>
+      <li>其他技能：
+        <ul>
+          <li>資料結構與演算法基礎</li>
+          <li>Git/GitHub 版本控制：★★★☆☆</li>
+          <li>統計分析基礎（統計學一）</li>
+        </ul>
+      </li>
+    </ul>
+
+
+    <h2>專案作品</h2>
+    <h3>獨立項目</h3>
+    <ul>
+      <li>
+        大一上：點餐系統<br>
+        說明：主要功能包括顯示菜單與價格、讓顧客選擇餐點、數量、付款成功。<br>
+      </li>
+      <li>
+        大一下：線上圖書館借還書系統<br>
+        說明：提供使用者查詢圖書、借書、還書等功能，並可由管理者進行書籍資料維護。
+      </li>
+      <li>
+        大二上：台灣出生率與死亡率的比較<br>
+        說明：透過資料視覺化呈現出生率與死亡率的趨勢變化，並進行基本的統計分析。
+      </li>
+      <li>
+        大二下：交易平台<br>
+        說明：模擬買賣雙方的交易系統，具備商品上架、下單與交易紀錄查詢功能。
+        <a href="https://youtu.be/ZMei3PMjCCo?si=B6x8MgIkn1FasTje" target="_blank">作品連結</a>
+      </li>
+    </ul>
+
+
+
+    <h2>文章</h2>
+    <p>我覺得資管這個領域最有趣的地方，是它不只學技術，還會教你怎麼把科技應用在解決真實的問題。不管是哪種課程，最終目的都是讓工作更有效率、讓使用者更方便。我認為資管人不只是寫程式的人，更像是懂得用科技去「優化生活」的人。</p>
+
+    <h2>獲獎與榮譽</h2>
+    <p>目前尚未獲得相關獎項或競賽成就，但我持續參與資管相關課程與專案，並積極準備未來的比賽與實習機會，希望能在未來累積更多實務與成果經驗。</p>
+
+    <h2>參與活動照片</h2>
+    <div class="activity-photos">
+      <img src="images/i1.jpg" alt="活動照片1">
+      <img src="images/i2.jpg" alt="活動照片2">
+      <img src="images/i3.jpg" alt="活動照片3">
     </div>
 
-    <div class="container mt-3">
-        <h1>Display Headings</h1>
-        <p>Display headings are used to stand out more than normal headings
-            (larger font-size and lighter font-weight):
-        </p>
-        <h1 class="display-1">Display 1</h1>
-        <h1 class="display-2">Display 2</h1>
-        <h1 class="display-3">Display 3</h1>
-        <h1 class="display-4">Display 4</h1>
-        <h1 class="display-5">Display 5</h1>
-        <h1 class="display-6">Display 6</h1>
-    </div>
 
-    <div class="container">
-        <p class="text-start">文字從頭對齊-文字從頭對齊-文字從頭對齊-文字從頭對齊-文字從頭對齊-文字從頭對齊</p>
-        <p class="text-center">文字置中-文字置中-文字置中-文字置中-文字置中-文字置中-文字置中-文字置中</p>
-        <p class="text-end">文字從尾對齊-文字從尾對齊-文字從尾對齊-文字從尾對齊-文字從尾對齊-文字從尾對齊</p>
-        <p class="text-wrap">文字換行-文字換行-文字換行-文字換行-文字換行-文字換行-文字換行-文字換行-文字換行</p>
-        <p class="text-nowrap">文字不換行-文字不換行-文字不換行-文字不換行-文字不換行-文字不換行-文字不換行</p>
-    </div>
+  </div>
+
 </body>
 
 </html>
